@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+
+/* 공통서식 */
+ul,ol,li{list-style: none;}
+a{text-decoration: none; color: #000;}
+*{
+    margin: 0px; padding: 0px;
+    font-family: 'Futura Std', sans-serif;
+    font-weight: normal;
+    scroll-behavior: smooth;
+}
+label:hover{cursor: pointer;}
+input:hover{cursor: pointer;}
+

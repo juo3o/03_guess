@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게스반응형웹main</title>
+    <!-- 초기화 -->
+    <link href="./css/reset.css" rel="stylesheet" type="text/css">
+    <!-- 공통서식 -->
+    <link href="./css/common.css" rel="stylesheet" type="text/css">
+    <!-- pc서식 (우선) -->
+    <link rel="stylesheet" href="./css/pc.css" type="text/css">
+    <!-- tablet서식 -->
+    <link rel="stylesheet" href="./css/tablet.css" type="text/css">
+    <!-- mobile서식 -->
+    <link rel="stylesheet" href="./css/mobile.css" type="text/css">
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" type="text/css">
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- 제이쿼리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/futura-std-4');
+    </style>
+</head>
+<body>
+    <!-- 상단헤더영역 -->
+    <header>
+        <!-- 내비배경 -->
+        <div class="tablet_box">
+        <!-- 펼쳐지는 박스 -->
+        <div class="h_wrap">
+            <!-- 헤더100% 영역 -->
+            <div class="h_box">
+                <div class="h_inner">
+                    <h1><a href="index.html" title="메인페이지로바로가기"><img src="./images/logo.png" alt="상단로고"></a></h1>
+                    <!-- 내비게이션 -->
+                    <nav>
+                        <!-- 모바일토글창 -->
+                        <div class="tm_nav">
+                            <!-- 닫기버튼 -->
+                            <a class="close_btn"><img src="./images/close.png" alt="닫기버튼"></a>
+                            <!-- 검색창 -->
+                            <div id="t_search">
+                                <label for="search_tablet"><img src="./images/search.png" alt="검색버튼" class="searchicon"></label><input type="text" placeholder="패딩점퍼" maxlength="30" id="search_tablet">
+                            </div>
+                            <!-- 로그인.회원가입버튼 -->
+                            <div class="login_wrap">
+                                <label for="login_btn"></label><input type="button" value="로그인" id="login_btn">
+                                <label for="join_btn"></label><input type="button" value="회원가입" id="join_btn">
+                            </div>
+                        </div>
+                        <ul class="navi">
+                            <li class="nav1">브랜드소개<img src="./images/arrow_angle.png" alt="" class="angle">
+                                <!-- 서브내비게이션 -->
+                                <ul class="sub sub1">
+                                    <li><a href="#" title="브랜드소개">브랜드소개</a></li>
+                                    <li><a href="#" title="브랜드역사">브랜드역사</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav2">WOMEN<img src="./images/arrow_angle.png" alt="" class="angle">
+                                <!-- 서브내비게이션 -->
+                                <ul class="sub sub2">
+                                    <li><a href="#" title="아우터">아우터</a></li>
+                                    <li><a href="#" title="상의">상의</a></li>
+                                    <li><a href="#" title="하의">하의</a></li>
+                                    <li><a href="#" title="데님">데님</a></li>
+                                    <li><a href="#" title="ACC">ACC</a></li>
+                                    <li><a href="#" title="SET">SET</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav3">MEN<img src="./images/arrow_angle.png" alt="" class="angle">
+                                <!-- 서브내비게이션 -->
+                                <ul class="sub sub3">
+                                    <li><a href="#" title="아우터">아우터</a></li>
+                                    <li><a href="#" title="상의">상의</a></li>
+                                    <li><a href="#" title="하의">하의</a></li>
+                                    <li><a href="#" title="데님">데님</a></li>
+                                    <li><a href="#" title="ACC">ACC</a></li>
+                                    <li><a href="#" title="SET">SET</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav4">신상품<img src="./images/arrow_angle.png" alt="" class="angle">
+                                <!-- 서브내비게이션 -->
+                                <ul class="sub sub4">
+                                    <li><a href="#" title="전체">전체</a></li>
+                                    <li><a href="#" title="여성">여성</a></li>
+                                    <li><a href="#" title="남성">남성</a></li>
+                                    <li><a href="#" title="데님">데님</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav5">컬렉션<img src="./images/arrow_angle.png" alt="" class="angle">
+                                <!-- 서브내비게이션 -->
+                                <ul class="sub sub5">
+                                    <li><a href="#" title="FW수지">FW수지</a></li>
+                                    <li><a href="#" title="FW송강">FW송강</a></li>
+                                    <li><a href="#" title="데님포커스">데님포커스</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav6">이벤트<img src="./images/arrow_angle.png" alt="" class="angle">
+                                <!-- 서브내비게이션 -->
+                                <ul class="sub sub6">
+                                    <li><a href="#" title="진행중이벤트">진행중이벤트</a></li>
+                                    <li><a href="#" title="종료된이벤트">종료된이벤트</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav7">고객지원<img src="./images/arrow_angle.png" alt="" class="angle">
+                                <!-- 서브내비게이션 -->
+                                <ul class="sub sub7">
+                                    <li><a href="#" title="공지사항">공지사항</a></li>
+                                    <li><a href="#" title="자주묻는질문">자주묻는질문</a></li>
+                                    <li><a href="#" title="1문의">1:1문의</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="h_icon">
+                        <li>
+                            <!-- 검색창 -->
+                            <label for="searchbox"><img src="./images/search.png" alt="검색버튼"></label><input type="text" placeholder="패딩점퍼" maxlength="30" id="searchbox">
+                        </li>
+                        <li>
+                            <!-- 찜한상품버튼 -->
+                            <a href="heart.html" title="찜한상품페이지"><img src="./images/heart.png" alt=""></a>
+                        </li>
+                        <li>
+                            <!-- 장바구니버튼-->
+                            <a href="cart.html" title="장바구니페이지"><img src="./images/cart.png" alt=""></a>
+                        </li>
+                        <li>
+                            <!-- 토글아이콘 -->
+                            <div class="mtoggle">
+                                <img src="./images/toggle.png" alt="토글메뉴">
+                            </div>
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+        </div>
+    </header>
+    <!-- 메인영역 --> 
+    <main>
+        <!-- 메인배너 -->
+        <article class="m_banner">
+            <h2 class="h2none">메인배너</h2>
+            <div class="swiper">
+                <div class="swiper_wrapper">
+                    <div class="swiper-slide slide1">
+                        <a href="#" title="메인배너1"><img src="./images/mbanner1.png" alt="메인배너1"></a>
+                        <p class="big_font">FEATHER LIGHT PUFFER<br>
+                            <span>23' FEATHER LIGHT OUTERWEAR COLLECTION</span>
+                        </p>
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <a href="#" title="메인배너2"><img src="./images/mbanner2.jpg" alt="메인배너2"></a>
+                        <p class="big_font">My Days in Denim<br>
+                            <span>23'FW SUZY COLLECTION</span>  
+                        </p>
+                    </div>
+                    <div class="swiper-slide slide3">
+                        <a href="#" title="메인배너3"><img src="./images/mbanner3.jpg" alt="메인배너3"></a>
+                        <p class="big_font">2023 WINTER COLLECTION<br>
+                            <span>23' GUESS WINTER SEASON COLLECTION</span>
+                        </p>
+                    </div>
+                    <div class="swiper-slide slide4">
+                        <a href="#" title="메인배너4"><img src="./images/mbanner4.jpg" alt="메인배너4"></a>
+                        <p class="big_font">SONG KANG FEATHER LIGHT<br>
+                            <span>23' FEATHER LIGHT OUTERWEAR COLLECTION</span>
+                        </p>
+                    </div>
+                    <div class="swiper-slide slide5">
+                        <a href="#" title="메인배너5"><img src="./images/mbanner5.png" alt="메인배너5"></a>
+                        <p class="big_font">WARM TOUCH DENIM<br>
+                            <span>편안하게, 따뜻하게, 부드럽게, 게스 웜터치 데님</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- 좌우버튼 -->
+                <div class="mbanner_btn">
+                    <a href="#" title=""><img src="./images/leftbtn.png" alt="왼쪽버튼" id="m_left"></a>
+                    <a href="#" title=""><img src="./images/rightbtn.png" alt="오른쪽버튼" id="m_right"></a>
+                </div>
+                <!-- 컨트롤버튼 -->
+                <ul class="pagination">
+                    <li class="on">&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                </ul>
+            </div>
+        </article>
+        <!-- 신상품 -->
+        <article>
+            <h2>NEW ARRIVAL</h2>
+            <h3>신상품을 만나보세요</h3>
+            <!-- 이미지wrap -->
+            <div class="newitem_wrap">
+                    <!-- 첫째줄 -->
+                    <ul>
+                        <li>
+                            <a href="#" title=""><img src="./images/new1.png" alt="상품1"></a>
+                            <p class="hover_txt">남성 GO<br>카고 팬츠<br>_LIGHT BEIGE<br><span>117,600</span></p>                        
+                        </li>
+                        <li>
+                            <a href="#" title=""><img src="./images/new2.png" alt="상품2"></a>
+                            <p class="hover_txt">남성<br>옥스포드<br>긴팔 셔츠<br>_LIGHT BLUE<br><span>68,600</span></p>
+                        </li>
+                        <li>
+                            <a href="#" title=""><img src="./images/new3.png" alt="상품3"></a>
+                            <p class="hover_txt">GIULLY MINI<br>CNVRTBLE<br>XBDY FLAP<br>_LIGHT BLUE<br><span>111,200</span></p>
+                        </li>
+                        <li>
+                            <a href="#" title=""><img src="./images/new4.png" alt="상품4"></a>
+                            <p class="hover_txt">남녀공용<br>배색<br>바시티 자켓<br>_MELANGE GREY<br><span>166,800</span></p>
+                        </li>
+                        <li>
+                            <a href="#" title=""><img src="./images/new5.png" alt="상품5"></a>
+                            <p class="hover_txt">여성 가디건<br>레이어드<br>스웨터<br>_LIGHT VIOLET<br><span>100,800</span></p>
+                        </li>
+                        <li>
+                            <a href="#" title=""><img src="./images/new6.png" alt="상품6"></a>
+                            <p class="hover_txt">여성 루즈핏<br>케이블<br>스웨터<br>_LIGHT PINK<br><span>70,800</span></p>
+                        </li>
+                    </ul>
+                    <!-- 둘째줄 -->
+                    <ul>
+                        <li>
+                            <a href="#" title=""><img src="./images/new7.png" alt="상품7"></a>
+                            <p class="hover_txt">여성 GO<br>빈티지<br>튜브탑<br>데님 원피스<br>_MEDIUM BLUE<br><span>138,600</span></p>                        
+                        </li>
+                        <li>
+                            <a href="#" title=""><img src="./images/new8.png" alt="상품8"></a>
+                            <p class="hover_txt">여성<br>카펜터 팬츠<br>_MEDIUM BLUE<br><span>198,000</span></p>
+                        </li>
+                        <li>
+                            <a href="#" title=""><img src="./images/new9.png" alt="상품9"></a>
+                            <p class="hover_txt">남성 앞<br>디테일<br>릴렉스<br>테이퍼드<br>_MEDIUM BLUE<br><span>198,000</span></p>
+                        </li>
+                        <li>
+                            <a href="#" title=""><img src="./images/new10.png" alt="상품10"></a>
+                            <p class="hover_txt">남녀공용<br>배색<br>바시티 자켓<br>_MELANGE GREY<br><span>166,800</span></p>
+                        </li>
+                        <li>
+                            <a href="#" title=""><img src="./images/new11.png" alt="상품11"></a>
+                            <p class="hover_txt">여성<br>플레어 붓컷<br>_DARK BLUE TALL<br><span>198,000</span></p>
+                        </li>
+                        <li>
+                            <a href="#" title=""><img src="./images/new12.png" alt="상품12"></a>
+                            <p class="hover_txt">남녀공용<br>케이블<br>스웨터<br>베스트<br>_NAVY<br><span>54,600</span></p>
+                        </li>
+                    </ul>
+            </div>
+        </article>
+        <!-- 브랜드소개 -->
+        <article class="brand_introduce">
+            <h2 class="h2none">브랜드소개</h2>
+            <div class="back_img">
+                <img src="./images/tri_logo.png" alt="로고이미지" class="tri_logo">
+                <p>
+                        1981년, 미국에서 출발하여<br>
+                        청바지에 Sexy한 이미지를 부여함으로써 <br>
+                        Denim 시장을 장악한 패션 기업 GUESS(게스)는 <br>
+                        <br>
+                        30년이라는 시간 동안<br>
+                        “섹시함, 젊음, 모험적인”(Sexy, Young, Adventurous)이라는 <br>
+                        일관된 브랜드 모토를 유지하고 있으며, <br>
+                        <br>
+                        미국, 유럽,아시아 전역에 Guess를 포함한 <br>
+                        Guess by Marciano, Guess Footwear,<br>
+                        Guess kids, G by Guess를 런칭 함은 물론 <br>
+                        <br>
+                        핸드백, 시계, 아이웨어, 주얼리 외 가죽제품을 포함한 <br>
+                        남녀 모두가 착용 가능한 Guess Accessories의<br>
+                        성공적 사업 확장을 전개중인 <br>
+                        <br>
+                        “Total Life Style Brand” 입니다.
+                </p>
+                <label for="v_btn"></label><input type="button" value="+ view more" id="v_btn">
+            </div>
+        </article>
+        <!-- women.men -->
+        <article class="gender_wrap">
+            <h2 class="h2none">여성복.남성복</h2>
+            <!-- WOMEN -->
+            <div class="women">
+                <div>
+                    <img src="./images/Polygon0.png" alt="삼각형1" class="tri1">
+                    <img src="./images/Polygon1.png" alt="삼각형1" class="tri2">
+                    <img src="./images/Polygon2.png" alt="삼각형1" class="tri3">
+                    <img src="./images/Polygon3.png" alt="삼각형1" class="tri4">
+                </div>
+                <label for="b_women"></label><input type="button" value="WOMEN" id="b_women">
+            </div>
+            <!-- MEN -->
+            <div class="men">
+                <div>
+                    <img src="./images/Polygon4.png" alt="삼각형4" class="tri5">
+                    <img src="./images/Polygon5.png" alt="삼각형5" class="tri6">
+                    <img src="./images/Polygon6.png" alt="삼각형6" class="tri7">
+                    <img src="./images/Polygon7.png" alt="삼각형7" class="tri8">
+                </div>
+                <label for="b_men"></label><input type="button" value="MEN" id="b_men">
+            </div>
+        </article>
+        <!-- 키워드랭킹 -->
+        <article>
+            <h2>KEYWORD RANKING</h2>
+            <h3>지금 인기있는 키워드를 확인해보세요</h3>
+            <div class="keywordranking">
+                <!-- 랭킹순위목록 -->
+                <ul class="rank_wrap">
+                    <li><a href="#k" title=""><span class="key_number">1</span>패딩</a>
+                        <ul class="key_sub key1 on">
+                            <li><a href="#" title="" id="key1"><img src="./images/key1_img.png" alt="패딩1"></a></li>
+                            <li>
+                                <p>
+                                    [페더라이트]<br>
+                                    <br>
+                                    여성 칼라 글레이즈드 <br>푸퍼<br>
+                                    _LIGHT YELLOW<br>
+                                    <br>
+                                    <span class="key_price">₩ 198,000</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#k" title=""><span class="key_number">2</span>데님팬츠</a>
+                        <ul class="key_sub key2" >
+                            <li><a href="#" title="" id="key2"><img src="./images/key2_img.png" alt="데님1"></a></li>
+                            <li>
+                                <p>
+                                    [POP]<br>
+                                    <br>
+                                    여성 BBK 오비<br>비죠 와이드 팬츠<br>
+                                    _BLUE BLACK<br>
+                                    <br>
+                                    <span class="key_price">₩ 88,800</span>                                
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#k" title=""><span class="key_number">3</span>가디건</a>
+                        <ul class="key_sub key3">
+                            <li><a href="#" title="" id="key3"><img src="./images/key3_img.png" alt="가디건1"></a></li>
+                            <li>
+                                <p>
+                                    여성 라글란<br>크랍 스웨터 집업<br>
+                                    _JET BLACK<br>
+                                    <br>
+                                    <span class="key_price">₩ 94,800</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#k" title=""><span class="key_number">4</span>니트</a>
+                        <ul class="key_sub key4">
+                            <li><a href="#" title="" id="key4"><img src="./images/key4_img.png" alt="니트1"></a></li>
+                            <li>
+                                <p>
+                                    남성 케이블<br>후드 집업<br>가디건<br>
+                                    _BEIGE<br>
+                                    <br>
+                                    <span class="key_price">₩ 138,600</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#k" title=""><span class="key_number">5</span>후드티</a>
+                        <ul class="key_sub key5">
+                            <li><a href="#" title="" id="key5"><img src="./images/key5_img.png" alt="후드티1"></a></li>
+                            <li>
+                                <p>
+                                    남녀공용<br>기모쭈리 로고<br>후디<br>
+                                    _DARK NAVY<br>
+                                    <br>
+                                    <span class="key_price">₩ 69,000</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- 랭킹순위누르면 오른쪽에 해당 이미지 탭메뉴 -->
+                <!-- 랭킹순위div -->
+                <div class="rank_img_wrap">
+                    <!-- 이미지div -->
+                    <div class="grid">
+                        <div class="rank_grid gird1 on">
+                            <a href="#" title="패딩1" class="item1"><img src="./images/key1_01.png" alt="패딩1"></a>
+                            <a href="#" title="패딩2" class="item2"><img src="./images/key1_02.png" alt="패딩2"></a>
+                            <a href="#" title="패딩3" class="item3"><img src="./images/key1_03.png" alt="패딩3"></a>
+                            <a href="#" title="패딩4" class="item4"><img src="./images/key1_04.png" alt="패딩4"><div class="rank_txt"><p>가벼운 아우터</p><p>우수한 보온성</p><span class="more_btn">+ MORE</span></div></a>
+                        </div>
+                        <div class="rank_grid grid2 ">
+                            <a href="#" title="데님1" class="item1"><img src="./images/key2_01.png" alt="데님1"></a>
+                            <a href="#" title="데님2" class="item2"><img src="./images/key2_02.png" alt="데님2"></a>
+                            <a href="#" title="데님3" class="item3"><img src="./images/key2_03.png" alt="데님3"></a>
+                            <a href="#" title="데님4" class="item4"><img src="./images/key2_04.png" alt="데님4"><div class="rank_txt"><p>트렌드 데님팬츠</p><p>다양한 코디매치</p><span class="more_btn">+ MORE</span></div></a>
+                        </div>
+                        <div class="rank_grid grid3">
+                            <a href="#" title="가디건1" class="item1"><img src="./images/key3_01.png" alt="가디건1"></a>
+                            <a href="#" title="가디건2" class="item2"><img src="./images/key3_02.png" alt="가디건2"></a>
+                            <a href="#" title="가디건3" class="item3"><img src="./images/key3_03.png" alt="가디건3"></a>
+                            <a href="#" title="가디건4" class="item4"><img src="./images/key3_04.png" alt="가디건4"><div class="rank_txt"><p>따뜻한 가디건</p><p>코지한 무드</p><span class="more_btn">+ MORE</span></div></a>
+                        </div>
+                        <div class="rank_grid grid4">
+                            <a href="#" title="스웨터1" class="item1"><img src="./images/key4_01.png" alt="스웨터1"></a>
+                            <a href="#" title="스웨터2" class="item2"><img src="./images/key4_02.png" alt="스웨터2"></a>
+                            <a href="#" title="스웨터3" class="item3"><img src="./images/key4_03.png" alt="스웨터3"></a>
+                            <a href="#" title="스웨터4" class="item4"><img src="./images/key4_04.png" alt="스웨터4"><div class="rank_txt"><p>부드러운 스웨터</p><p>퀄리티 있는 디테일</p><span class="more_btn">+ MORE</span></div></a>
+                        </div>
+                        <div class="rank_grid gird5">
+                            <a href="#" title="후드1" class="item1"><img src="./images/key5_01.png" alt="후드1"></a>
+                            <a href="#" title="후드2" class="item2"><img src="./images/key5_02.png" alt="후드2"></a>
+                            <a href="#" title="후드3" class="item3"><img src="./images/key5_03.png" alt="후드3"></a>
+                            <a href="#" title="후드4" class="item4"><img src="./images/key5_04.png" alt="후드4"><div class="rank_txt"><p>활용하기 좋은 후드</p><p>베이직한 아이템</p><span class="more_btn">+ MORE</span></div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- 할인배너 -->
+        <article class="sale">
+            <h2 class="h2none">할인배너</h2>
+            <!-- div에 가로그라데이션으로 배경색 나누기 -->
+            <div class="b_black" >
+                <img src="./images/salebanner.png" alt="할인배너" class="salebanner">
+                <div class="saletxt_wrap">
+                    <p>GUESS ITEM<br>AWARDS</p>
+                    <div>
+                        <p>
+                            각 부문별 베스트 아이템을<br>
+                            공식몰 전용 쿠폰 혜택과 함께 만나보세요.
+                        </p>
+                        <p>
+                            전상품<span class="discount">10%</span>
+                        </p>
+                        <label for="down_btn"></label><input type="button" value="쿠폰 다운받기" id="down_btn">
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- 데님컬렉션 -->
+        <article>
+            <h2>DENIM COLLECTION</h2>
+            <h3>GUESS의 데님 컬렉션을 확인해보세요</h3>
+            <ul class="denim_wrap">
+                <li><a href="#" title=""><img src="./images/collection1.png" alt="컬렉션1" class="dimg"></a>
+                    <div class="denim_txt">
+                        <p>DENIM FOCUS COLLECTION</p>
+                        <a href="" title="" class="v_btn">+ view more</a>
+                    </div>
+                </li>
+                <li><a href="#" title=""><img src="./images/collection2.png" alt="컬렉션2" class="dimg"></a>
+                    <div class="denim_txt">
+                        <p>23'FW SUZY COLLECTION</p>
+                        <a href="" title="" class="v_btn">+ view more</a>
+                    </div>
+                </li>
+                <li><a href="#" title=""><img src="./images/collection3.png" alt="컬렉션3" class="dimg"></a>
+                    <div class="denim_txt">
+                        <p>23'FW SONGKANG COLLECTION</p>
+                        <a href="" title="" class="v_btn">+ view more</a>
+                    </div>
+                </li>
+            </ul>
+        </article>
+        <!-- 이벤트 -->
+        <article class="event_wrap">
+            <h2>EVENT</h2>
+            <h3>GUESS의 다양한 이벤트를 확인해보세요</h3>
+            <div class="event">
+                    <div class="event_img_wrap">
+                        <div>
+                            <img src="./images/event2.png" alt="이벤트배너1">
+                            <div class="event_txt">
+                                <p>GUESS LUCKY BOX with SUZY</p>
+                                <p>
+                                <strong>이벤트 진행기간</strong><br>
+                                2023.11.20 - 2023.12.10
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./images/event3.png" alt="이벤트배너1">
+                            <div class="event_txt">
+                                <p>마케팅 수신동의 20% 할인 쿠폰</p>
+                                <p>
+                                <strong>이벤트 진행기간</strong><br>
+                                2023.8.31-2023.12.31
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="./images/event1.png" alt="이벤트배너1">
+                            <div class="event_txt">
+                                <p>GUESS HOLIDAY SHOP</p>
+                                <p>
+                                <strong>이벤트 진행기간</strong><br>
+                                2023.12.19 - 2024.01.01
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event_btn">
+                        <a href="#2" title=""><img src="./images/leftbtn.png" alt="왼쪽버튼" class="elbtn"></a>
+                        <a href="#2" title=""><img src="./images/rightbtn.png" alt="오른쪽버튼"  class="erbtn"></a>
+                    </div>
+            </div>
+        </article>
+    </main>
+    <!-- 하단푸터영역 -->
+    <footer id="b">
+        <div class="f_inner">
+            <ul class="f_grid">
+                <li class="f_logo">
+                    <a href="index.html" title="메인으로바로가기"><img src="./images/f_logo.png" alt="하단로고"></a>
+                </li>
+                <li class="f_menu1">
+                    <ul>
+                        <li><a href="" title="회사정보">회사정보</a></li>
+                        <li><a href="" title="회사소개">회사소개</a></li>
+                        <li><a href="" title="이용약관">이용약관</a></li>
+                        <li><a href="" title="개인정보처리방침">개인정보처리방침</a></li>
+                        <li><a href="" title="고객지원">고객지원</a></li>
+                    </ul>
+                </li>
+                <li class="f_menu2">
+                    <ul>
+                        <li>PROMOSITON</li>
+                        <li>EVENT</li>
+                        <li>NOTICE</li>
+                        <li>OFFLINE STORE</li>
+                        <li>REVIEW</li>
+                    </ul>
+                </li>
+                <li class="f_copy">
+                    <address>
+                    COPYRIGHT ⒞ GUESSKOREA. ALL RIGHTS RESERVED.
+                    </address> 
+                </li>
+                <li class="f_sns">
+                    <a href="#" title=""><img src="./images/facebook.png" alt="facebook"></a>
+                    <a href="#" title=""><img src="./images/instagram.png" alt="instagram"></a>
+                    <a href="#" title=""><img src="./images/kakao.png" alt="kakao"></a>
+                    <a href="#" title=""><img src="./images/blog.png" alt="blog"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- TOP버튼 -->
+    <div class="top_btn">
+        <a href="#" title="TOP">TOP</a>
+        <hr>
+        <a href="#b" title="BOTTOM">BOTTOM</a>
+    </div>
+    <!-- 인덱스 스크립트 -->
+    <script src="./script/index.js"></script>
+</body>
+</html>
